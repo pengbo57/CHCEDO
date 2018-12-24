@@ -1,0 +1,288 @@
+
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: -50%;
+    width: 100%;
+    display: none;
+}
+.pic,.pic1{
+    display: block;
+    height: 100%;
+}
+.item:hover .pic{
+    display: none;
+}
+.item:hover video{
+    display: block;
+}
+.main>div{
+    width: 100%;
+    height: 33.33%;
+    position: absolute;
+    left: 0;
+}
+.first_line{
+    top: 0;
+}
+.second_line{
+    top:33.33%;
+}
+.third_line{
+    top:66.66%;
+    position: relative;
+}
+.item{
+    overflow: hidden;
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    top: 0;
+}
+.item:nth-child(1){
+    left: 0;
+}
+.item:nth-child(2){
+    left: 33.33%;
+}
+.item:nth-child(3){
+    left: 66.66%;
+}
+.baseline{
+    position: absolute;
+    left: 30px;
+    top: 25%;
+    line-height: 140%;
+    font-size: 12px;
+    z-index: 3;
+}
+.item:hover .baseline{
+    display: none;
+}
+.base_en{
+    display: block;
+    color: #00a77b;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-variant:small-caps;
+}
+.base_wz{
+    display: block;
+    color: #000;
+    font-size: 22px;
+    margin-top: 12px;
+    font-weight: lighter;
+}
+.nature_main{
+    position: relative;
+    height: 50%;
+}
+.nature_main h2{
+    text-align: center;
+    position: relative;
+    height: 50%;
+}
+.nature_main h2 img{
+    position: absolute;
+    width:40%;
+    margin-left: -25%;
+    left: 55%;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second_line .bar{
+    width: 100%;
+    height: 30%;
+}
+.second_line .bar .bar_ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+}
+.second_line .bar li{
+    position: relative;
+    display: inline-block;
+    top:25px;
+    white-space: normal;
+}
+.second_line .bar p{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+.copy_right,.last{
+    color: #fff;
+    font-size: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+}
+.copy_right a{
+ color: #fff;
+}
+.last{
+   left: 10%;
+}
+
+.menu_box{
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+    padding: 2% 0;
+    background: #f6f5f5;
+    bottom: 0;
+    text-align: center;
+    display: none;
+}
+.item:hover .menu_box{
+    display: block;
+}
+.menu_box ul{
+   display: inline-block;
+    text-align: center;
+}
+.menu_box li{
+    float: left;
+    display: list-item;
+    white-space: nowrap;
+    line-height: 14px;
+}
+.menu_box li a{
+    color: #000;
+    font-size: 8px;
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    border-right: 1px solid #000;
+}
+.menu_box li span{
+    margin-left: 8px;
+}
+.menu_box li:last-child a{
+   border: none;
+}
+
+
+
+
+
+
+
+.first_line .item:nth-child(1){
+     background-image: url("http://www.chcedo.com/img/images/20181130/1543578041846_1.jpg");
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+ }
+.first_line .item:nth-child(2){
+    background-image: url("http://www.chcedo.com/img/images/20171013/1507867537554_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.first_line .item:nth-child(3){
+    background-image: url("http://www.chcedo.com/img/images/20170622/1498118925688_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.second_line .item:nth-child(1){
+    background-image: url("http://www.chcedo.com/img/images/20180627/1530070645071_1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.second_line .item:nth-child(2){
+    background: #00a77b;
+}
+.second_line .item:nth-child(3){
+    background-image: url("http://www.chcedo.com/img/images/20180713/1531468921593_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.third_line .item:nth-child(1){
+    background-image: url("http://www.chcedo.com/img/images/20180829/1535513561049_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.pic_trans,.pic1{
+    height: 100%;
+    position:relative;
+    left:0;
+    top:0;
+    background-size:100%;
+}
+.third_line .pic_trans{
+    background-image: url("http://www.chcedo.com/img/images/20170622/1498119137798_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    transform: perspective(500px) rotateY(0deg);
+    transition: all 3.4s ease-in-out 0s;
+}
+.third_line .pic1{
+    background-image: url("http://www.chcedo.com/assets/images/jgg_8_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    transform: perspective(500px) rotateY(-90deg);
+    transition: all 3.7s ease-in-out 0s;
+
+}
+.third_line .item:nth-child(3){
+    background-image: url("http://www.chcedo.com/img/images/20170804/1501832436525_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.third_line .item_trans:hover .pic1{
+   /* left: 0;*/
+    transform: perspective(600px) rotateY(0deg);
+    transition: all 4.9s ease-in-out 0s;
+
+}
+.third_line .item_trans:hover .pic_trans{
+
+   /* left: 100%;*/
+    transform: perspective(600px) rotateY(90deg);
+    transition: all 4.6s ease-in-out 0s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
